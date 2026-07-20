@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Poppins,sans-serif;
+    background:linear-gradient(to bottom,#020111,#081b33,#000);
+    color:white;
+    overflow-x:hidden;
+}
+
+.hidden{
+    display:none;
+}
+
+#welcome{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+#welcome h1{
+    font-family:'Great Vibes',cursive;
+    font-size:70px;
+    color:#ffd6ea;
+    text-shadow:0 0 20px pink;
+}
+
+#welcome p{
+    margin:20px 0;
+    font-size:22px;
+}
+
+#startButton{
+    padding:18px 40px;
+    border:none;
+    border-radius:40px;
+    background:#ff4fa3;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#startButton:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px pink;
+}
+
+#main{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.hero h1{
+    font-family:'Great Vibes',cursive;
+    font-size:65px;
+    text-align:center;
+    color:#ffd6ea;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:22px;
+}
+
+.photo{
+    text-align:center;
+    margin:40px 0;
+}
+
+.photo img{
+    width:320px;
+    max-width:90%;
+    border-radius:25px;
+    box-shadow:0 0 30px hotpink;
+    transition:.4s;
+}
+
+.photo img:hover{
+    transform:scale(1.05);
+}
+
+.letter{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(8px);
+    border-radius:20px;
+    padding:30px;
+    line-height:2;
+    font-size:20px;
+    margin:40px 0;
+}
+
+.music{
+    text-align:center;
+    margin-top:40px;
+}
+
+audio{
+    width:90%;
+}
+
+#ending{
+    text-align:center;
+    padding:100px 20px;
+}
+
+#ending h1{
+    font-family:'Great Vibes',cursive;
+    font-size:70px;
+    color:#ffb3dc;
+}
+
+#ending h2{
+    margin-top:20px;
+    font-size:35px;
+}
+
+#moon{
+    position:fixed;
+    right:70px;
+    top:60px;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background:#fff9d5;
+    box-shadow:
+    0 0 40px white,
+    0 0 80px white,
+    0 0 120px #ffffcc;
+    z-index:-2;
+}
+
+#stars{
+    position:fixed;
+    inset:0;
+    background-image:
+    radial-gradient(white 1px,transparent 1px);
+    background-size:45px 45px;
+    animation:stars 90s linear infinite;
+    z-index:-3;
+}
+
+@keyframes stars{
+    from{transform:translateY(0);}
+    to{transform:translateY(1000px);}
+}
